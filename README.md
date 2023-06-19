@@ -16,3 +16,5 @@ property.
 [ 1: Introduction to Back-End Development](https://coursera.org/share/5df3fd9b497f709c36fad3753846c4b5)
 
 [ 2: Programming in Python](https://www.coursera.org/learn/programming-in-python/home/week/4?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta)
+
+[ 3: Introduction to Databases for Back-End Development](https://coursera.org/share/d96d993f86e57ae486202823fbac171d)
