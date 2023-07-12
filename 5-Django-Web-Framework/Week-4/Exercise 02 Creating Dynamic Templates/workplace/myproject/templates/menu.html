@@ -1,0 +1,11 @@
+<!-- Add code to display contents of the Menu -->
+{% if menu %}
+<ul>
+  {% for item in menu %}
+  <li>{{ item.name }} | {{ item.price }}</li>
+</br>
+  {% endfor %}
+</ul>
+{% else %}
+<h3>Menu not found</h3>
+{% endif %}
