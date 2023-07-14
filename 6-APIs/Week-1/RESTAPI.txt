@@ -1,0 +1,43 @@
+What makes an API RESTful?
+If it compiles with certain constraints.
+
+1. Client-Server
+2. Stateless
+3. Cacheable
+4. Layered
+5. Uniform Interface
+6. Optional code on demand
+
+
+API Naming Convention?
+a. lowercase letters
+b. forward slashes for hirerchy
+c. nouns
+d. no filenames
+c. query parameters
+d. no trailing slash
+e. consistent naming strategy
+f. standard naming conventions
+
+
+Example
+1. lower case words: littlelemon/order/
+2. between words: (-): littlelemon/items/item-name
+3. variable: littlelemon/orders/{orderId}/order-items
+4. data format: littlelemon/orders/{orderId}?format=json
+5. data format: littlelemon/order/{orderId}?format=xmls
+6.  leave no slash at end: (littlelemon/order/{orderId}) (no slash at end)
+
+
+Essential Tools for API development
+1. curl : powershell, linux
+    curl  
+    URL:  https://postman-echo.com/get?project=LittleLemon
+
+    curl -d project="LittleLemon" -X POST
+
+2. POST MAN
+3. INSOMIA
+
+
+Webpage: https://httpbin.org
