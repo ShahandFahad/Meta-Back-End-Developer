@@ -41,3 +41,20 @@ Essential Tools for API development
 
 
 Webpage: https://httpbin.org
+
+
+
+Priniciple of API development
+1. KISS = Keep It Simple Stupid
+2. Filter, Order, Paginate
+3. Version
+4. Cache
+5. Rate Limit
+6. Monitor
+
+Security and Authentication in REST API 
+1. SSL
+2. HMAC (signed urls)
+3. JWT (JSON web token) (Token Authentication)
+4. CORS policy and firewalls (Cross Origin Resource Sharing)
+5. Firewalls
