@@ -20,3 +20,5 @@ property.
 [ 3: Introduction to Databases for Back-End Development](https://coursera.org/share/d96d993f86e57ae486202823fbac171d)
 
 [ 5: Django Web Framework](https://coursera.org/share/c7a78f7c3356c71c176035fccd157bf5)
+
+[ 6: APIs](https://coursera.org/share/5bebbe5f269705a9867ce133184d6a00)
