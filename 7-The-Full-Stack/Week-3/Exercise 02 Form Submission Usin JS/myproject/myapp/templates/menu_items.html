@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>Menu Items</title>
+  </head>
+  <body class="bg-light">
+    <div class="container pt-4">
+      <h1>Menu Items</h1>
+      <form method="POST" id="form">
+        {% csrf_token %} {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      const form = document.getElementById("form");
+      form.addEventListener("submit", submitHandler);
+
+      function submitHandler(e) {
+        e.preventDefault();
+
+        fetch(form.action, { method: "POST", body: new FormData(form) })
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.message === "success") {
+              alert("Success!");
+              form.reset();
+            }
+          });
+      }
+    </script>
+  </body>
+</html>
