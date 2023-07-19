@@ -1,0 +1,44 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<section>
+  <article>
+    <h1>All Reservations</h1>
+    <!--Begin row-->
+    <div class="row">
+      <!--Begin col-->
+      <div class="column">
+        {% for booking in bookings.bookings %}
+        <p id="bookings">
+          <span> {{ booking.first_name }} </span>
+          <span> {{ booking.reservation_date }} </span>
+          <span> {{ booking.reservation_slot }} </span>
+        </p>
+        {% endfor %}
+      </div>
+      <!--End col-->
+
+      <!--Begin col-->
+      <div class="column">
+        <div class="videowrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11898.289517452584!2d-87.60853049433447!3d41.79442860243028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2912ce6f7027%3A0xc0cfb5545d4a37b2!2sHyde%20Park%2C%20Chicago%2C%20IL%2C%20USA!5e0!3m2!1sen!2spt!4v1662384760663!5m2!1sen!2spt"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <!--End col-->
+    </div>
+    <!--End row-->
+  </article>
+</section>
+<script>
+  const bookings = JSON.parse("{{ bookings|safe }}");
+  console.log(bookings);
+  const pretty_json = JSON.stringify(bookings, null, 2);
+  document.getElementById("bookings").innerHTML = pretty_json;
+</script>
+{% endblock %}
