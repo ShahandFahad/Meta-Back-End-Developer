@@ -22,3 +22,5 @@ property.
 [ 5: Django Web Framework](https://coursera.org/share/c7a78f7c3356c71c176035fccd157bf5)
 
 [ 6: APIs](https://coursera.org/share/5bebbe5f269705a9867ce133184d6a00)
+
+[ 7: The Full Stack](https://coursera.org/share/8c1f0956a2ee4f66f66c49cb5463b7cd)
