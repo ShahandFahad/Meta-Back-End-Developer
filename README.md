@@ -17,7 +17,9 @@ property.
 
 [ 2: Programming in Python](https://www.coursera.org/learn/programming-in-python/home/week/4?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta)
 
-[ 3: Introduction to Databases for Back-End Development](https://coursera.org/share/d96d993f86e57ae486202823fbac171d)
+[ 3: Version Control](https://coursera.org/share/8b4e2a468c1cf5b97c9e52d0ce6d3db0)
+
+[ 4: Introduction to Databases for Back-End Development](https://coursera.org/share/d96d993f86e57ae486202823fbac171d)
 
 [ 5: Django Web Framework](https://coursera.org/share/c7a78f7c3356c71c176035fccd157bf5)
 
