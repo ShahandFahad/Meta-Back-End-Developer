@@ -26,3 +26,5 @@ property.
 [ 6: APIs](https://coursera.org/share/5bebbe5f269705a9867ce133184d6a00)
 
 [ 7: The Full Stack](https://coursera.org/share/8c1f0956a2ee4f66f66c49cb5463b7cd)
+
+[ 9: Coding Interview Preparation](https://www.coursera.org/learn/coding-interview-preparation/home/week/1?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta)
