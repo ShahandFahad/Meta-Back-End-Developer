@@ -28,3 +28,17 @@ property.
 [ 7: The Full Stack](https://coursera.org/share/8c1f0956a2ee4f66f66c49cb5463b7cd)
 
 [ 9: Coding Interview Preparation](https://www.coursera.org/learn/coding-interview-preparation/home/week/1?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta)
+
+# Others
+
+## Meta Front End Developer:
+
+[Meta-Back-End-Developer](https://github.com/ShahandFahad/Meta-Front-End-Developer.git)
+
+## Meta Front End Developer Capstone:
+
+[LittleLemon Using React](https://github.com/ShahandFahad/Little-Lemon.git)
+
+## Meta Back End Developer Capstone:
+
+[LittleLemon Using Django and DRF](https://github.com/ShahandFahad/littlelemon.git)
