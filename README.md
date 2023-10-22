@@ -27,6 +27,8 @@ property.
 
 [ 7: The Full Stack](https://coursera.org/share/8c1f0956a2ee4f66f66c49cb5463b7cd)
 
+[ 8: Back-End Developer Capstone](https://coursera.org/share/1f9f6dc87a6682fc1733ecdb632ca1a7)
+
 [ 9: Coding Interview Preparation](https://www.coursera.org/learn/coding-interview-preparation/home/week/1?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta)
 
 # Others
