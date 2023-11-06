@@ -37,9 +37,11 @@ In this program, you’ll learn:
 
 # Badge
 
-[View Badge](https://www.credly.com/badges/757aff74-006e-4a95-bcee-331198791479/public_url)
-
+[View Badge: Backend Developer](https://www.credly.com/badges/757aff74-006e-4a95-bcee-331198791479/public_url)
 ![Meta Back-End Developer Certificate](./meta-back-end-developer-certificate.png)
+
+[View Badge: Full Stack Engineer](https://www.credly.com/badges/0788eda1-8b01-4e1b-a00d-733009d2d44c/public_url)
+![Meta Full Stack Engineer Certificate](./meta-full-stack-engineer-certificate.png)
 
 # Other Projects
 
