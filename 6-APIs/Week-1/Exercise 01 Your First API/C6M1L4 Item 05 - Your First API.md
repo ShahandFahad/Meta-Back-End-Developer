@@ -1,6 +1,5 @@
 # C6M1L4 Item 05 - Your First API
 
-
 ## Introduction
 
 In the lesson, you learned about creating and organizing a **Booklist API** project and you now know the consequences of a poorly designed API project. You will now have the opportunity to apply what you've learned. In this exercise, you will create a Book list project using plain Django. This means that you will need to create all the API endpoints. These include APIs to add new books, list available books and search for a specific book.
@@ -42,7 +41,6 @@ Follow the instructions below and ensure you check the output at every step and 
 
 **Note:** Before you begin, make sure you understand how to work with the Coursera Code Lab for the [APIS course](https://www.coursera.org/learn/apis/supplement/WXiq5/working-with-labs-in-this-course).
 
-
 ## Steps
 
 **Step 1:**
@@ -55,11 +53,11 @@ Create the three attributes you need in the model and assign the respective form
 
 Additionally, pass the following arguments to those form fields.
 
-| **Attribute** | **Form field type** | **Arguments** |
-| --- | --- | --- |
-| title | CharField | max\_length = 255 |
-| author | CharField | max\_length = 255 |
-| price | DecimalField | max\_digits=5, decimal\_places=2 |
+| **Attribute** | **Form field type** | **Arguments**                  |
+| ------------- | ------------------- | ------------------------------ |
+| title         | CharField           | max_length = 255               |
+| author        | CharField           | max_length = 255               |
+| price         | DecimalField        | max_digits=5, decimal_places=2 |
 
 **Tip:** _Recall that the form fields are imported from the models package._
 
@@ -69,7 +67,7 @@ Create a class inside the model class `Book` called `Meta`.
 
 Inside the `Meta` class, create a variable called `indexes` and assign a list to it that contains one element as below.
 
-``` models.Index(fields=['price']), ```
+`models.Index(fields=['price']),`
 
 **Note:** _This is contrary to the use of elements present in a typical Python list but you should keep the comma (`,`) as also shown in the code in case of `urlpatterns`_
 
@@ -150,8 +148,8 @@ urlpatterns = [
 
 Replace the comment inside the `urlpatterns` with the `path()` function with two arguments passed inside it:
 
-* A URL configuration for the `path` such as a string called `books`
-* A relative path for the view function `books` that you are going to create
+- A URL configuration for the `path` such as a string called `books`
+- A relative path for the view function `books` that you are going to create
 
 **Step 10:**
 Go to the project-level **urls.py** inside the **BookList** and observe the URL configurations already added in-place. Remove the commenting of the line **#21**:
@@ -165,8 +163,7 @@ Go to the file **views.py** inside the **BookListAPI** directory and import the 
 - `JsonResponse` function from the `package django.http`
 - The `Book` model from the **models.py** file present inside the same directory
 - The `csrf_exempt` decorator function from the package `django.views.decorators.csrf`
-- The `model_to_dict` function from the package `django.forms.model`
-
+- The `model_to_dict` function from the package `django.forms.models`
 
 **Tip:** Note that when importing a file inside the same directory, you need to use a dot operator in front of the file while importing. For example, a package named `xyz` from inside file called `abc` will be imported as follows:
 
@@ -180,7 +177,6 @@ Add the decorator for `csrf_exempt` before you begin writing the view function.
 
 ![](assets/7.png)
 
-
 **Step 13:**
 
 On the next line, define a view function called `books` and pass a request object to it as a parameter. Implement the code by following the steps in the pseudo-code below.
@@ -188,15 +184,15 @@ On the next line, define a view function called `books` and pass a request objec
 If the value of `request.method` is `'GET'`:
 
 - Assign the value of `Book.objects.all().values()` to a variable called `books`
-- Return the `JsonResponse()` from the view that has a dictionary passed inside it whose key is the string `'books'` and whose value is the variable `books` typecasted to a *list* object
+- Return the `JsonResponse()` from the view that has a dictionary passed inside it whose key is the string `'books'` and whose value is the variable `books` typecasted to a _list_ object
 
 Else if the value of `request.method` is `'POST'`:
 
 - Assign `request.POST.get('title')` to a variable title
 - Assign `request.POST.get('author')` to a variable author
 - Assign `request.POST.get('price')` to a variable price
-- Now create another variable called `book` and assign it a `Book` object that has three arguments passed for `title`, `author` and `price` in a format that follows variable assignment such as: 
-`title = title` and so on.
+- Now create another variable called `book` and assign it a `Book` object that has three arguments passed for `title`, `author` and `price` in a format that follows variable assignment such as:
+  `title = title` and so on.
 - Add a `try` block:
 
 - - Call the `save()` function on the `book` variable by using the dot operator.
@@ -209,10 +205,7 @@ Else if the value of `request.method` is `'POST'`:
 
 _**Note:** Double-check the code created for the view function to ensure there are no errors. Errors may occur in one or more places, but Python and Django will flag them one at a time. In this example, the views have conditional statements which should be double-checked for accuracy._
 
-
-
 **Step 14:**
-
 
 Run the server and go to the URL specified in the command line followed by the suffix that you have configured inside the URL configurations. The URL to be accessed on the browser will be:
 
